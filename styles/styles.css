@@ -1,0 +1,118 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+/* shares styles */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.display-width, section{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.display-flex{
+    display: flex;
+}
+
+/* font colors */
+
+.black{
+    color: black;
+}
+.orange{
+    color: orange;
+}
+.skyblue{
+    color: skyblue;
+}
+.turquoise-blue{
+    color: #05D4DF;
+}
+.blue-violet{
+    color: #5D58EF;
+}
+
+/* button styles */
+.primary-btn{
+    background-color: black;
+    color: white;
+    padding: 13px 47px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+}
+
+/* navbar styles */
+
+.navbar{
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.website-name{
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+.web-name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.nam-menu{
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-text{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.contact-btn{
+    background-color: orange;
+    color: white;
+    padding: 10px 60.5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+}
+
+/* banner styles */
+.banner{
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 61px;
+    margin-bottom: 24px;
+}
+
+.banner-description{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
