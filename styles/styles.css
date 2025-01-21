@@ -47,7 +47,7 @@ header,
 .curriculum,
 .our-sories-section,
 .footer-section,
-.scrolling{
+.scrolling {
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -123,8 +123,28 @@ header,
 
 /* marquee styles */
 
-marquee{
+.scrolling {
+    margin-top: 10px;
+}
+
+.scrolling span {
+    padding-left: 10px;
+    background-color: orange;
+    width: 10%;
+    padding: 5px;
     font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+}
+
+marquee {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(243, 243, 243);
+    padding: 5px 0;
+    /* border-radius: 0 5px 5px 0; */
 }
 
 /* Banner related styles */
@@ -235,7 +255,7 @@ marquee{
     padding: 10px 20px;
 }
 
-.arrows{
+.arrows {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +263,8 @@ marquee{
     margin-bottom: 60px;
 }
 
-.fa-chevron-left, .fa-chevron-right{
+.fa-chevron-left,
+.fa-chevron-right {
     font-size: 2rem;
     font-weight: 700;
     background-color: orange;
@@ -290,7 +311,7 @@ marquee{
     border-radius: 16px 16px 0 0;
 }
 
-.story-big-card-content{
+.story-big-card-content {
     width: 450px;
     margin: 0 auto;
     padding: 0 40px;
@@ -436,44 +457,48 @@ footer {
 
 
     /* banner serction */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         padding: 0 20px;
         gap: 0;
         justify-items: center;
         align-items: center;
     }
-    .banner-content{
+
+    .banner-content {
         text-align: center;
         margin-bottom: 20px;
     }
-    .banner-img{
+
+    .banner-img {
         transform: scale(.84);
     }
 
     /* curriculum section */
 
-    .curriculum-card-container{
+    .curriculum-card-container {
         grid-template-columns: 1fr;
         gap: 24px;
         padding: 0 20px;
         margin-bottom: 20px;
     }
 
-    .arrows{
+    .arrows {
         display: none;
     }
 
     /* our stories section */
 
-    .story-sidebar{
+    .story-sidebar {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 20px;
     }
-    .stories-big-card{
+
+    .stories-big-card {
         display: none;
     }
-    .stories-btn-date{
+
+    .stories-btn-date {
         width: 70%;
         font-size: .6rem;
         transform: translateX(20%) translateY(-65%);
@@ -486,16 +511,17 @@ footer {
         gap: 32px;
         margin: 0 20px;
     }
-    .footer-web-description{
+
+    .footer-web-description {
         width: 100%;
     }
 
-    .social-media-container{
+    .social-media-container {
         margin-right: 5px;
     }
 
 
 
-    
+
 
 }
