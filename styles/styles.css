@@ -114,6 +114,12 @@ header,
     font-weight: 500;
 }
 
+/* mouse hover on contact button */
+
+.contact-btn:hover {
+    background-color: black;
+}
+
 /* Banner related styles */
 
 .banner {
@@ -184,21 +190,24 @@ header,
     background: linear-gradient(rgba(222, 245, 255, 1), white, white, white);
 }
 
-#card-1:hover {
-    background: linear-gradient(white, white, rgba(222, 245, 255, 1));
-}
-
 #card-2 {
     background: linear-gradient(rgba(255, 244, 220, 1), white, white, white);
+}
+
+#card-3 {
+    background: linear-gradient(rgb(238, 225, 255), white, white, white);
+}
+
+/* mouse hover on curriculum cards */
+
+#card-1:hover {
+    background: linear-gradient(white, white, rgba(222, 245, 255, 1));
 }
 
 #card-2:hover {
     background: linear-gradient(white, white, rgba(255, 244, 220, 1));
 }
 
-#card-3 {
-    background: linear-gradient(rgb(238, 225, 255), white, white, white);
-}
 #card-3:hover {
     background: linear-gradient(white, white, rgb(238, 225, 255));
 }
@@ -210,6 +219,8 @@ header,
     font-weight: 700;
     text-decoration: none;
 }
+
+/* mouse hover on read more button */
 
 .read-more:hover {
     border: 1px solid black;
