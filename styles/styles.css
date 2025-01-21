@@ -46,7 +46,8 @@ header,
 .banner,
 .curriculum,
 .our-sories-section,
-.footer-section{
+.footer-section,
+.scrolling{
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -118,6 +119,12 @@ header,
 
 .contact-btn:hover {
     background-color: black;
+}
+
+/* marquee styles */
+
+marquee{
+    font-size: 1rem;
 }
 
 /* Banner related styles */
@@ -228,6 +235,24 @@ header,
     padding: 10px 20px;
 }
 
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.fa-chevron-left, .fa-chevron-right{
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: orange;
+    text-align: center;
+    padding: 18px 25px;
+    border-radius: 50%;
+    color: white;
+}
+
 
 /* our stories related styles */
 
@@ -326,7 +351,7 @@ header,
 #date-btn-light-turquoise {
     background-color: #3CD8E8;
     padding: 15px 19px;
-    transform: translateX(60%) translateY(-65%);
+    transform: translateX(60%) translateY(-60%);
     font-size: 1rem;
 }
 
@@ -434,6 +459,11 @@ footer {
         padding: 0 20px;
         margin-bottom: 20px;
     }
+
+    .arrows{
+        display: none;
+    }
+
     /* our stories section */
 
     .story-sidebar{
