@@ -44,7 +44,9 @@
 
 header,
 .banner,
-.curriculum {
+.curriculum,
+.our-sories-section,
+.footer-section{
     max-width: 1160px;
     margin: 0 auto;
 }
@@ -54,7 +56,7 @@ header,
 }
 
 .primary-btn {
-    background-color: orange;
+    background-color: black;
     color: white;
     padding: 10px 47px;
     font-size: 1.25rem;
@@ -64,46 +66,7 @@ header,
 }
 
 .primary-btn:hover {
-    background: none;
-    border: 2px solid orange;
-    border-radius: 12px;
-    color: orange;
-    font-size: 1.25rem;
-    font-weight: 700;
-    padding: 10px 47px;
-}
-
-#card-1 {
-    background: linear-gradient(rgba(222, 245, 255, 1), white, white, white);
-}
-
-#card-2 {
-    background: linear-gradient(rgba(255, 244, 220, 1), white, white, white);
-}
-
-#card-3 {
-    background: linear-gradient(rgb(238, 225, 255), white, white, white);
-}
-
-.stories-btn-date {
-    background-color: #95B226;
-    color: white;
-    border: none;
-    border-radius: 48px;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    padding: 10px 19px;
-    transform: translateX(38.35px) translateY(-60%);
-}
-
-#date-btn-light-turquoise {
-    background-color: #3CD8E8;
-    padding: 15px 19px;
-}
-
-#date-btn-periwinkle-blue {
-    background-color: #5D58F0;
+    background-color: orange;
 }
 
 /* navbar related styles */
@@ -215,10 +178,43 @@ header,
     margin-bottom: 33px;
 }
 
+/* curriculum cards id */
+
+#card-1 {
+    background: linear-gradient(rgba(222, 245, 255, 1), white, white, white);
+}
+
+#card-1:hover {
+    background: linear-gradient(white, white, rgba(222, 245, 255, 1));
+}
+
+#card-2 {
+    background: linear-gradient(rgba(255, 244, 220, 1), white, white, white);
+}
+
+#card-2:hover {
+    background: linear-gradient(white, white, rgba(255, 244, 220, 1));
+}
+
+#card-3 {
+    background: linear-gradient(rgb(238, 225, 255), white, white, white);
+}
+#card-3:hover {
+    background: linear-gradient(white, white, rgb(238, 225, 255));
+}
+
+/* read more button */
+
 .read-more {
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
+}
+
+.read-more:hover {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px 20px;
 }
 
 
@@ -250,8 +246,6 @@ header,
     background-color: white;
     border: none;
     border-radius: 16px;
-    width: 540px;
-    height: 630px;
 }
 
 .stories-big-img {
@@ -260,20 +254,23 @@ header,
     border-radius: 16px 16px 0 0;
 }
 
+.story-big-card-content{
+    width: 450px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .stories-big-title {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 38px;
     margin-bottom: 48px;
-    padding: 0 38px;
-
 }
 
 .stories-big-description {
     font-size: 1rem;
     line-height: 29px;
     margin-bottom: 35px;
-    padding: 0 38px;
 }
 
 .story-sidebar {
@@ -286,21 +283,44 @@ header,
     background-color: white;
     border: none;
     border-radius: 16px;
-    width: 290px;
-    height: 301px;
 }
 
 .small-story-caption {
     font-size: 1rem;
     font-weight: 700;
     line-height: 29px;
-    padding: 0 33px;
+    padding: 0 24px 24px 24px;
 }
 
 .small-story-img {
     width: 100%;
     border: none;
     border-radius: 16px 16px 0 0;
+}
+
+/* stories date button */
+
+.stories-btn-date {
+    background-color: #95B226;
+    color: white;
+    border: none;
+    border-radius: 48px;
+    font-size: .75rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 19px;
+    transform: translateX(30%) translateY(-60%);
+}
+
+#date-btn-light-turquoise {
+    background-color: #3CD8E8;
+    padding: 15px 19px;
+    transform: translateX(60%) translateY(-65%);
+    font-size: 1rem;
+}
+
+#date-btn-periwinkle-blue {
+    background-color: #5D58F0;
 }
 
 .view-all-btn {
@@ -315,20 +335,14 @@ footer {
 }
 
 .footer-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 150px;
-    justify-items: center;
-    width: 1160px;
-    margin: 0 auto;
-    padding: 120px 0 150px 0;
+    padding: 80px 0 120px 0;
 }
 
 .footer-web-info-container {
-    justify-content: center;
     align-items: center;
     gap: 11px;
-    height: 82px;
     margin-bottom: 35px;
 }
 
@@ -337,13 +351,10 @@ footer {
     color: white;
 }
 
-.footer-web-info-container>img {
-    height: 100%;
-}
-
 .footer-web-description {
     font-size: 1.25rem;
     color: white;
+    width: 400px;
 }
 
 /* footer menu styles */
@@ -377,8 +388,73 @@ footer {
 }
 
 .social-media-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    justify-items: center;
+}
+
+/* responsive for small device */
+
+@media screen and (max-width: 576px) {
+
+    /* navbar */
+
+
+
+    /* banner serction */
+    .banner{
+        flex-direction: column-reverse;
+        padding: 0 20px;
+        gap: 0;
+        justify-items: center;
+        align-items: center;
+    }
+    .banner-content{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .banner-img{
+        transform: scale(.84);
+    }
+
+    /* curriculum section */
+
+    .curriculum-card-container{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    /* our stories section */
+
+    .story-sidebar{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 20px;
+    }
+    .stories-big-card{
+        display: none;
+    }
+    .stories-btn-date{
+        width: 70%;
+        font-size: .6rem;
+        transform: translateX(20%) translateY(-65%);
+    }
+
+    /* footer section */
+
+    .footer-section {
+        flex-direction: column;
+        gap: 32px;
+        margin: 0 20px;
+    }
+    .footer-web-description{
+        width: 100%;
+    }
+
+    .social-media-container{
+        margin-right: 5px;
+    }
+
+
+
+    
+
 }
