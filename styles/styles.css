@@ -105,6 +105,10 @@ header,
     text-decoration: none;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .contact-btn {
     background-color: orange;
     color: white;
@@ -130,7 +134,7 @@ header,
 .scrolling span {
     padding-left: 10px;
     background-color: orange;
-    width: 10%;
+    width: 100px;
     padding: 5px;
     font-size: 1rem;
     font-weight: 700;
@@ -454,7 +458,35 @@ footer {
 
     /* navbar */
 
+    .web-name,
+    .contact-btn,
+    .nav-menu {
+        display: none;
+    }
 
+    header {
+        border-bottom: 1px solid orange;
+    }
+
+    .navbar {
+        align-items: center;
+        margin: 10px 20px;
+
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.8rem;
+        text-align: end;
+    }
+
+
+    /* marquee styles */
+
+    .scrolling {
+        margin: 0 20px;
+        margin-top: 20px;
+    }
 
     /* banner serction */
     .banner {
